@@ -106,8 +106,4 @@ void Camera1394Nodelet::devicePoll()
     }
 }
 
-// Register this plugin with pluginlib.  Names must match nodelet_velodyne.xml.
-//
-// parameters are: package, class name, class type, base class type
-PLUGINLIB_DECLARE_CLASS(camera1394, driver,
-                        Camera1394Nodelet, nodelet::Nodelet);
+PLUGINLIB_EXPORT_CLASS(Camera1394Nodelet, nodelet::Nodelet);
